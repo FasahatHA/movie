@@ -127,7 +127,7 @@
         })();
     </script>
     
-    <title>MovieIGuess - Discover Amazing Movies & TV Shows</title>
+    <title>MFasahatG - Discover Amazing Movies & TV Shows</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="netflix-style.css">
@@ -751,7 +751,7 @@
         <div class="flex flex-col items-center space-y-8">
             <!-- Logo with animation -->
             <div id="logoContainer" class="opacity-0 transform scale-50">
-                <img src="src/assets/logo.png" alt="MovieIGuess Logo" class="w-24 h-24 lg:w-32 lg:h-32 object-contain">
+                <img src="src/assets/logo.png" alt="MFasahatG Logo" class="w-24 h-24 lg:w-32 lg:h-32 object-contain">
             </div>
             
             <!-- Typing Text Container -->
@@ -771,7 +771,7 @@
             <!-- Logo and Desktop Navigation -->
             <div class="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 w-full lg:w-auto">
                 <h1 class="text-netflix-red text-2xl lg:text-3xl font-bold cursor-pointer hover:text-white transition-colors text-center lg:text-left flex items-center" onclick="home()">
-                    <img src="src/assets/logo.png" alt="MovieIGuess Logo" class="w-8 h-8 lg:w-10 lg:h-10 mr-2 object-contain">MovieIGuess
+                    <img src="src/assets/logo.png" alt="MFasahatG Logo" class="w-8 h-8 lg:w-10 lg:h-10 mr-2 object-contain">MFasahatG
                 </h1>
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex space-x-6">
@@ -1843,7 +1843,7 @@
         const typingContainer = document.getElementById('typingContainer');
         
         // Check if loading has already been shown in this tab session
-        const hasLoadingBeenShown = sessionStorage.getItem('movieIGuessLoadingShown');
+        const hasLoadingBeenShown = sessionStorage.getItem('mfasahatgLoadingShown');
         
         if (hasLoadingBeenShown === 'true') {
             // Skip loading animation - show main content immediately
@@ -1857,7 +1857,7 @@
         }
         
         // Mark that loading has been shown in this session
-        sessionStorage.setItem('movieIGuessLoadingShown', 'true');
+        sessionStorage.setItem('mfasahatgLoadingShown', 'true');
         
         // Prevent scrolling during loading
         document.body.style.overflow = 'hidden';
@@ -1882,7 +1882,7 @@
             
             // Start typing animation - clean professional typing
             var typed = new Typed('#typedText', {
-                strings: ['MovieI<span class="text-white">Guess</span>'],
+                strings: ['MFas<span class="text-white">ahatG</span>'],
                 typeSpeed: 30,
                 backSpeed: 0,
                 fadeOut: false,
@@ -2203,7 +2203,7 @@
 
     // Also add subtle glow to header logo
     function addHeaderLogoGlow() {
-        const headerLogo = document.querySelector('header img[alt="MovieIGuess Logo"]');
+        const headerLogo = document.querySelector('header img[alt="MFasahatG Logo"]');
         if (headerLogo) {
             headerLogo.style.filter = `
                 drop-shadow(0 0 8px rgba(229, 9, 20, 0.4))
